@@ -16,7 +16,13 @@ module.exports = {
         ecmaVersion: 11,
         sourceType: 'module'
     },
-    ignorePatterns: ['src/libs/*.js'],
+    ignorePatterns: [
+        'node_modules/',
+        'dist/',
+        'public/',
+        'build',
+        'src/libs/*.js'
+    ],
     rules: {
         // 0: "off", 1: "warn", 2: "error"
         'no-console': isDev ? 0 : 1,

@@ -57,9 +57,7 @@ module.exports = {
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: [
-                    'file-loader'
-                ]
+                use: ['file-loader']
             }
         ]
     },
@@ -68,10 +66,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'src/index.html'
         }),
-        new copyWebpackPlugin([{
-            from: 'public/',
-            to: './static'
-        }]),
+        new copyWebpackPlugin([
+            {
+                from: 'public/',
+                to: './static'
+            }
+        ]),
         new MiniCssExtractPlugin({
             filename: isDev ? '[name].css' : '[name].[hash:8].css',
             chunkFilename: isDev ? '[id].css' : '[id].[hash:8].css',
