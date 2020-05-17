@@ -1,4 +1,6 @@
 # Map Projections
+![Build and Deploy](https://github.com/yancongwen/map-projections/workflows/Build%20and%20Deploy/badge.svg?branch=master)
+
 以可视化的形式展示地图投影
 
 ## 墨卡托投影（Mercator projection）
